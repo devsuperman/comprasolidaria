@@ -44,13 +44,13 @@ namespace Web.Controllers
         }
 
         [HttpGet]
-        public IActionResult Register()
+        public IActionResult Registrar()
         {
             return View();
         }
 
         [HttpPost]
-        public async ValueTask<IActionResult> Register(RegistroViewModel registerViewModel)
+        public async ValueTask<IActionResult> Registrar(RegistroViewModel registerViewModel)
         {
             if (!ModelState.IsValid)
                 return View(registerViewModel);
